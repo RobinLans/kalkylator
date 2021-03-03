@@ -15,14 +15,9 @@ body {
   background-color: azure;
 }
 
-h1 {
-  margin: 4rem auto 3rem auto;
-  font-size: 3rem;
-}
-
 main {
   background-color: rgb(185, 185, 185);
-  margin: 0 auto auto auto;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +31,7 @@ main {
 
 .display {
   background-color: #fff;
-  width: 19rem;
+  width: 95%;
   height: 5rem;
   border: 1px solid #000;
   border-radius: 10px;
@@ -52,7 +47,7 @@ main {
 }
 
 .buttons {
-  width: 19rem;
+  width: 95%;
 }
 
 button {
@@ -150,4 +145,11 @@ button:focus {
   right: 0;
   opacity: 1;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 320px;
+    margin: auto;
+  }
 }
